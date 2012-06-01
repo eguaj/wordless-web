@@ -46,6 +46,8 @@
     jQuery('input').val('').attr('placeholder','');
     jQuery('textarea').val('').attr('placeholder','');
     jQuery('object').remove(); // bye, flash
+    jQuery('*').css('background-image', 'none');
+    jQuery('img').prop('src', 'data:image/gif,GIF89a%01%00%01%00%80%00%00%00%00%00%FF%FF%FF!%F9%04%01%00%00%00%00%2C%00%00%00%00%01%00%01%00%00%02%01D%00%3B').css('background-color', '#aaaaaa');
     window.__wlw.queued_update = false;
   }
   window.__wlw.loader();
